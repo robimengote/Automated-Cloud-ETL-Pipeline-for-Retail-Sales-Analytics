@@ -75,7 +75,8 @@ graph TD
 <img width="391" height="359" alt="image" src="https://github.com/user-attachments/assets/42424c37-bbb5-4252-a3cb-d62d560e9880" />
 
 + ### *Power BI Dashboard*
-<img width="975" height="616" alt="image" src="https://github.com/user-attachments/assets/ec658525-12c2-481a-a2c8-88e78e958aeb" />
+<img width="692" height="338" alt="image" src="https://github.com/user-attachments/assets/a41003d2-ee3c-4850-a5d7-c4637cd07f19" />
+
 
 
 
