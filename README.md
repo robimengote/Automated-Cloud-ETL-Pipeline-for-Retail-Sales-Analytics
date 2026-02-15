@@ -94,8 +94,7 @@ graph TD
 
 
 + ### *Power BI Dashboard*
-<img width="692" height="338" alt="image" src="https://github.com/user-attachments/assets/a41003d2-ee3c-4850-a5d7-c4637cd07f19" />
-
+![Dash SC for GitHub (2)](https://github.com/user-attachments/assets/e31cabad-b673-43ce-8377-f27f70f1948b)
 
 
 
