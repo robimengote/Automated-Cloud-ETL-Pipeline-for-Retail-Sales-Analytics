@@ -1,8 +1,7 @@
 <div align="center">
 
-# Automated Cloud ETL Pipeline for Retail Sales Analytics
-### Zero-Touch Data Architecture | Serverless Python Automation | Business Intelligence
-
+# Retail Intelligence Engine: Automated Cloud ETL & Customer Insights Dashboard
+### End-to-End Data Pipeline | Consumer Behavior Analytics | Zero-Touch Automation
 ![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-Data_Transformation-150458?style=for-the-badge&logo=pandas&logoColor=white)
 ![Google Cloud](https://img.shields.io/badge/Google_Cloud-Platform-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)
