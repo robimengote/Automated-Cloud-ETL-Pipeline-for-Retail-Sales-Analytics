@@ -72,7 +72,8 @@ graph TD
 <img width="975" height="284" alt="image" src="https://github.com/user-attachments/assets/e385eebe-1524-4d05-bbef-2643af3dfd0f" />
 
 + ### *Google Drive Folders*
-<img width="391" height="359" alt="image" src="https://github.com/user-attachments/assets/42424c37-bbb5-4252-a3cb-d62d560e9880" />
+<img width="576" height="324" alt="Drive SCs" src="https://github.com/user-attachments/assets/257746d1-2e0b-4aff-ab28-beec680b1b5e" />
+
 
 + ### *Power BI Dashboard*
 <img width="692" height="338" alt="image" src="https://github.com/user-attachments/assets/a41003d2-ee3c-4850-a5d7-c4637cd07f19" />
