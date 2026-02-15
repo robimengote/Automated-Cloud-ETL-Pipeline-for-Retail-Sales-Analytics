@@ -13,7 +13,7 @@
 ---
 
 ## 📖 Executive Summary
-Designed and deployed a fully automated, production-grade data pipeline for **Amante's Decadent Moist Cakes**, a retail business in Manila. This system eliminates manual data entry by extracting daily POS reports from email, transforming them via Python in the cloud, and updating a Power BI dashboard—all with zero human intervention.
+Designed and deployed a fully automated, production-grade data pipeline for **Amante's Decadent Moist Cakes**, a retail business in San Pablo City, Laguna. This system eliminates manual data entry by extracting daily POS reports from email, transforming them via Python in the cloud, and updating a Power BI dashboard—all with zero human intervention.
 
 ### ⚡ Key Features
 * **100% Automation:** Reduced daily manual data entry from 30 mins to **0 mins**.
