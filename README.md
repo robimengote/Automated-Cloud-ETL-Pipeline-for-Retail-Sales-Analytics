@@ -104,22 +104,41 @@ df['Category'] = df['Sub-Category'].map(SUBCATEGORY_TO_MAIN_MAP)
 ### 4.2. The Cloud Automation Loop
 ```python
 for file in files:
-    # 1. Fetch file from Google Drive into Memory
-    request = drive_service.files().get_media(fileId=file['id'])
-    file_content = io.BytesIO(request.execute())
-    
-    # 2. Transform Data using clean_report_data function
-    clean_df = clean_report_data(file_content, file['name'])
-    
-    if clean_df is not None:
-        processed_dfs.append(clean_df)
+        print(f"Processing: {file['name']}")
         
-        # 3. Archive the raw file
-        # Moves file from 'raw_pos_reports' -> 'archived_pos_reports'
+        # Download
+        request = drive_service.files().get_media(fileId=file['id'])
+        file_content = io.BytesIO(request.execute())
+        
+        # Clean Data (Using your logic)
+        clean_df = raw_report_transform(file_content, file['name'])
+        
+        if clean_df is not None:
+            processed_dfs.append(clean_df)
+            
+            # Archive the file (Move to processed folder)
+            drive_service.files().update(
+                fileId=file['id'],
+                addParents=ARCHIVE_FOLDER_ID,
+                removeParents=RAW_FOLDER_ID
+            ).execute()
+
+    # 5. Append and Upload Master
+    if processed_dfs:
+        print("Appending to Master...")
+        combined_new = pd.concat(processed_dfs)
+        updated_master = pd.concat([master_df, combined_new], ignore_index=True)
+
+        str_output = io.StringIO()
+        updated_master.to_csv(str_output, index=False)
+	    byte_output = io.BytesIO(str_output.getvalue().encode('utf-8'))
+ 
+
+        # Update the file in Drive
+        media_body = MediaIoBaseUpload(byte_output, mimetype='text/csv', resumable=True)
         drive_service.files().update(
-            fileId=file['id'],
-            addParents=ARCHIVE_FOLDER_ID,
-            removeParents=RAW_FOLDER_ID
+            fileId=MASTER_FILE_ID,
+            media_body=media_body
         ).execute()
         
-print(f"✅ Batch Processing Complete. {len(processed_dfs)} files merged.")
+        print(f"SUCCESS! Master file updated with {len(combined_new)} new rows.")
