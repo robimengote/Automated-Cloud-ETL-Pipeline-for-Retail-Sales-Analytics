@@ -34,7 +34,7 @@ graph TD
     subgraph Google_Drive [Google Drive Storage]
         RAW[📂 raw_pos_reports <br/> Staging Area]
         ARCHIVE_POS_REPORTS[📂 archived_pos_reports <br/> Archive History]
-        MASTER_REPORT_FILE[📊 Master_Report.csv <br/> Main Database]
+        MASTER_REPORT_FILE[📊 fact_sales2026.csv <br/> Main Database]
     end
     
     subgraph GitHub_Cloud [GitHub Actions Cloud]
