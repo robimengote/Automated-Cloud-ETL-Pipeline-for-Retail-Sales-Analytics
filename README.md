@@ -1,7 +1,26 @@
-# 1. About the project
-## Title: Automated Cloud ETL Pipeline for Retail Sales Analytics
-### A Zero-Touch Data Architecture using Python, GitHub Actions, and Google Cloud Platform 
-#### Designed and deployed a fully automated data pipeline for Amante's Decadent Moist Cakes that extracts their daily POS reports, transforms raw data via Python scripts in the cloud, and updates their Power BI dashboard without human intervention.
+<div align="center">
+
+# Automated Cloud ETL Pipeline for Retail Sales Analytics
+### Zero-Touch Data Architecture | Serverless Python Automation | Business Intelligence
+
+![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-Data_Transformation-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![Google Cloud](https://img.shields.io/badge/Google_Cloud-Platform-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-CI%2FCD-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
+![Power BI](https://img.shields.io/badge/Power_BI-Dashboard-F2C811?style=for-the-badge&logo=power-bi&logoColor=black)
+
+</div>
+
+---
+
+## 📖 Executive Summary
+Designed and deployed a fully automated, production-grade data pipeline for **Amante's Decadent Moist Cakes**, a retail business in Manila. This system eliminates manual data entry by extracting daily POS reports from email, transforming them via Python in the cloud, and updating a Power BI dashboard—all with zero human intervention.
+
+### ⚡ Key Features
+* **100% Automation:** Reduced daily manual data entry from 30 mins to **0 mins**.
+* **Serverless Architecture:** Runs entirely on GitHub Actions (Cron Schedule) and Google Cloud Platform.
+* **Idempotent Design:** Prevents duplicate data processing using an automated archival strategy.
+* **Secure:** Implements GCP Service Account authentication via Base64-encoded GitHub Secrets.
 
 
 # 2. Data Architecture Diagram
