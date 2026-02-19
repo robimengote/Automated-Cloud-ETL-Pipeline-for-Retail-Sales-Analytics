@@ -37,7 +37,7 @@ graph TD
     end
     
     subgraph GitHub_Cloud [GitHub Actions Cloud]
-        PY(Python Automation <br/> ⏰ 1:30 AM)
+        PY(Python Automation (Clean & Transform) <br/> ⏰ 1:30 AM)
         SECRET[🔒 GCP Service Key <br/> Base64 Encoded Secret]
     end
     
@@ -50,7 +50,7 @@ graph TD
     RAW -->|Read Data| PY
     SECRET -.->|Authenticate| PY
     
-    PY -->|Append Data| MASTER_REPORT_FILE
+    PY -->|Load Data| MASTER_REPORT_FILE
     PY -->|Move File| ARCHIVE_POS_REPORTS
     
     MASTER_REPORT_FILE -->|Import Data| PBI
