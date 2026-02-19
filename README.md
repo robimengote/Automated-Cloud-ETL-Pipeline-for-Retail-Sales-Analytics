@@ -37,7 +37,7 @@ graph TD
     end
     
     subgraph GitHub_Cloud [GitHub Actions Cloud]
-        PY(Python Automation (Clean & Transform) <br/> ⏰ 1:30 AM)
+        PY(Python Automation <br/> ⏰ 1:30 AM)
         SECRET[🔒 GCP Service Key <br/> Base64 Encoded Secret]
     end
     
